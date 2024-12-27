@@ -95,7 +95,7 @@ hr {
   display: flex;
  }
 
- section.flex-item {
+ section.portfolio-item {
   flex: 1;
   margin: 5px;
   font-size: 14px;
