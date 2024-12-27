@@ -77,20 +77,24 @@ hr {
   border: 1px solid black;
 }
 
+/* header flex container */
  .header-container {
   display: flex;
   align-items: center;
   justify-content: center;
  }
 
+ /* info and about flex containers */
  .about-container {
   display: flex;
  }
+
 
  div.info-container {
   text-align: justify;
  }
 
+ /* portfolio flex containers */
  .portfolio-container {
   display: flex;
  }
