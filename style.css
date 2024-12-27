@@ -1,27 +1,31 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
+  background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
-  background-color: #eae2b7;
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
+/* Headings */
 h1,
 h2,
 h3 {
-  text-align: center;
   font-family: "Playfair Display", Times, serif;
+  text-align: center;
 }
 
-h2 {
-  font-size: 40px;
+/* Header */
+header {
+  text-align: center;
 }
 
-h3 {
-  font-size: 30px;
+/* Containers */
+div {
+  background-color: #eae2b7;
+  margin: auto;
+  width: 600px;
 }
 
 article {
@@ -33,59 +37,13 @@ article div {
   width: 100%;
 }
 
+/* Paragraphs */
 p {
   line-height: 1.5;
 }
 
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: auto;
-  width: 600px;
-}
-
-img {
-   display: block;
-   margin: 0 auto;
-   width: 100%;
-   max-width: 200px;
-   height: auto;
-}
-
-hr {
-  border: 1px solid black;
-}
-
-/* Add your solution below */
-
-header h1 {
-  margin: 0;
-  font-size: 52px;
-  text-align: center;
-  padding: 60px 0 20px 20px;
-}
-
-footer {
-  text-align: center;
-}
-
-header nav {
-  text-align: center;
-}
-
-.image-circle {
-  border-radius: 50%;
-  border: 2px solid #003049;
-}
-
-.contact-centered {
-  text-align: center;
-}
-
+/* Links */
 a:link {
-  color: #d62828;
-}
-
-a:visited {
   color: #d62828;
 }
 
@@ -93,6 +51,52 @@ a:hover {
   color: #f77f00;
 }
 
-a:active {
-   color: #d62828;
+nav a {
+  padding-left: 20px;
 }
+
+/* Images */
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.image-circle {
+  border: 2px solid #003049;
+  border-radius: 50%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+/* Other page elements */
+hr {
+  border: 1px solid black;
+}
+
+ .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .about-container {
+  display: flex;
+ }
+
+ div.info-container {
+  text-align: justify;
+ }
+
+ .portfolio-container {
+  display: flex;
+ }
+
+ section.flex-item {
+  flex: 1;
+  margin: 5px;
+  font-size: 14px;
+ }
